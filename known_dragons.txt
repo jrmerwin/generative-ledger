@@ -1,0 +1,28 @@
+# KNOWN DRAGONS — code-level hazards (per Continuity Hardening Addendum §5)
+# Append-only. Theories go in the ledger's Retractions; crashes and traps go here.
+
+2026-07-05  stitch_logic.py is NOT the 01Q layer. It is a stub: _collapse_edge
+            is `pass`, _bundle_faces returns [], _is_manifold_legal returns
+            True unconditionally. Its comments cite RETRACTED k_max~3 and the
+            UNBUILT Xi=k/6 bridge. If exec'd in place of
+            DEU_GR_Experiment_01Q_coherent_topology_stitch_layer3.py, the
+            valve silently no-ops and every downstream number is garbage.
+            QUARANTINE. Do not import. Origin unknown; possibly generated in a
+            lost session.
+
+2026-07-05  The original DEU_GR_Experiment_01Q_..._layer3.py is missing from
+            the working set. A reconstructed shim (4 symbols: _cs_adj_from_state,
+            _cs_raw_bulk_center, CoherentStitchSnapshot, CoherentStitchRun) was
+            CERTIFIED by exact reproduction of 7 diverse archived rows of
+            u1_wall_101_120.csv (all four observables, bit-for-bit). The shim
+            is valid for the v21 pipeline observables ONLY. Any analysis that
+            consumes spatial_snapshots geometry should re-certify or use the
+            original file when recovered. Shim header marks itself clearly.
+
+2026-07-05  Seed-303 pinch-off remains open (ledger §5): do not run wedge
+            operator on seed 303 without the component-count check.
+
+2026-07-05  Claude-container: nohup/background processes DO NOT survive
+            between tool calls. All sweep scripts must be resumable
+            (incremental CSV + skip-completed-rows) and run in foreground
+            chunks. Definitive long grids run on the M2.
